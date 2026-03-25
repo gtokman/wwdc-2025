@@ -73,6 +73,18 @@ struct ContentView: View {
                     } label: {
                         Label("Ripple Editor", systemImage: "slider.horizontal.3")
                     }
+
+                    NavigationLink {
+                        ChromaticAberrationView()
+                    } label: {
+                        Label("Chromatic Aberration", systemImage: "camera.filters")
+                    }
+
+                    NavigationLink {
+                        ChromaticAberrationEditorView()
+                    } label: {
+                        Label("Aberration Editor", systemImage: "slider.horizontal.3")
+                    }
                 }
             }
             .navigationTitle("Visual Effects")
